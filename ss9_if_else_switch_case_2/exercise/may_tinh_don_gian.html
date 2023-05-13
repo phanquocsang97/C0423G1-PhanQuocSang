@@ -3,17 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        button {
+            width: 100%;
+        }
+
+    </style>
 </head>
 <body>
-<input type="number">
-<table>
+<input type="text" id="calculate"><br><br>
+<div class="thang">
+    <table>
     <tr>
-        <td><button type="button">1</button></td>
-        <td><button type="button">2</button></td>
-        <td><button type="button">3</button></td>
-        <td></td>
+        <td><button type="button" name="no1" value ="1" onclick="inputValue(this.value)"> 1 </button></td>
+        <td><button type="button" name="no2" value ="2" onclick="inputValue(this.value)"> 2 </button></td>
+        <td><button type="button" name="no3" value ="3"  onclick="inputValue(this.value)"> 3 </button></td>
+        <td><button type="button" name="plus" value ="+"onclick="inputValue(this.value)"> + </button></td>
     </tr>
-</table>
+
+    <tr>
+        <td><button type="button" name="no4" value ="4" onclick="inputValue(this.value)"> 4 </button></td>
+        <td><button type="button" name="no5" value ="5" onclick="inputValue(this.value)"> 5 </button></td>
+        <td><button type="button" name="no6" value ="6" onclick="inputValue(this.value)"> 6 </button></td>
+        <td><button type="button" name="subtraction" value ="-" onclick="inputValue(this.value)"> - </button></td>
+    </tr>
+    <tr>
+        <td><button type="button" name="no7" value ="7" onclick="inputValue(this.value)"> 7 </button></td>
+        <td><button type="button" name="no8" value ="8" onclick="inputValue(this.value)"> 8 </button></td>
+        <td><button type="button" name="no9" value ="9" onclick="inputValue(this.value)"> 9</button></td>
+        <td><button type="button" name="multiplication" value ="*" onclick="inputValue(this.value)"> * </button></td>
+    </tr>
+    <tr>
+        <td><button type="button" onclick="xoa();"> AC </button></td>
+        <td><button type="button" name="btn" onclick="inputValue(this.value)"> 0 </button></td>
+        <td><button  name= "reusult" onclick="result();"> = </button></td>
+        <td><button type="button" name="division" value ="/" onclick="inputValue(this.value)"> / </button></td>
+    </tr>
+    </table>
+    <script>
+        let calculate = document.getElementById("calculate");
+        function inputValue(value) {
+            calculate.value += value;
+        }
+        function result() {
+            let result = eval(calculate.value);
+            calculate.value = result;
+        }
+        function xoa() {
+            calculate.value="";
+        }
+    </script>
 
 </body>
 </html>
