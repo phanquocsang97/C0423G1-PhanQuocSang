@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let elec = +prompt('nhập số điện dùng mỗi tháng')
+    while (isNaN(elec)){
+        elec = +prompt('Vui lòng nhập dữ liệu số')
+    }
+    if (elec >0 && elec < 100){
+        alert('Tiền điện là ' + (elec *2))
+    }else if (100 <= elec <200){
+        alert('Tiền điện là ' + (elec * 2.5))
+    }else if (elec >200) {
+        alert('Tiền điện là '+ (elec * 3))
+    }else {
+        alert('Số liệu không hợp lệ')
+    }
+</script>
+
+</body>
+</html>

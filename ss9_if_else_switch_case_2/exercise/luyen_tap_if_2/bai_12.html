@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let money = +prompt('Nhập số tiền cần vay ngân hàng')
+    let month = +prompt('Nhập số tháng')
+    if (month <= 3){
+        money += money * 0.1
+    }else if (month <=6){
+        money += money * 0.2
+    }else {
+        money += money * 0.3
+    }
+    alert('số tiền mỗi tháng cần phải trả cho ngân hàng trong '+month+ ' là ' + money/month)
+
+</script>
+</body>
+</html>

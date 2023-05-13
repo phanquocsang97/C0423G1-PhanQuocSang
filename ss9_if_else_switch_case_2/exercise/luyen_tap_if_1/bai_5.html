@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt('Nhập vào điểm kiểm tra của học sinh')
+    let b = +prompt('Nhập vào điểm giữa kì của học sinh')
+    let c = +prompt('Nhập vào điểm cuối kì của học sinh')
+    let average = (a + b*2 + c*3) / 6
+    alert('Điểm trung bình là' + average)
+    if (average>8){
+        alert('xếp hạng học sinh giỏi')
+    }else if (average>6.5){
+        alert('xếp hạng học sinh khá')
+    }else if (average>5){
+        alert('xếp hạng học sinh trung bình')
+    }else {
+        alert('xếp hạng học sinh yếu')
+    }
+
+</script>
+
+</body>
+</html>

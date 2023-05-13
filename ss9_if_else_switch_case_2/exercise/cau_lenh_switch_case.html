@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Kiểm tra số ngày trong tháng</h1>
+<input type="number" placeholder="nhập vào tháng" min="1" max="12" style="width: 130px"id="so">
+<input type="button" onclick="check()" value="Check">
+<br>
+<p>Đây là kết quả :</p>
+<div id="result"></div>
+<script>
+    function check() {
+        let days = +document.getElementById('so').value
+        switch (days) {
+            case 1 :
+            case 3 :
+            case 5 :
+            case 7 :
+            case 8 :
+            case 10 :
+            case 12 :
+                document.getElementById('result').innerHTML = ` tháng ${days} có 31 ngày`;
+                break;
+            case 2 :
+                document.getElementById('result').innerHTML = ` tháng ${days} có 28 hoặc 29 ngày`;
+                break;
+            default :
+                document.getElementById('result').innerHTML = ` tháng ${days} có 30 ngày`;
+        }
+    }
+</script>
+</body>
+</html>
