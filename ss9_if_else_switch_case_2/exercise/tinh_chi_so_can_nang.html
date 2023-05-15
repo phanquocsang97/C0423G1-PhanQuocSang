@@ -7,9 +7,9 @@
 <script>
 
     function kiemtra() {
-        let can_nang = document.getElementById('can_nang').value;
-        let chieu_cao = document.getElementById('chieu_cao').value;
-        let bmi = can_nang / ( Math.pow(chieu_cao, 2) )
+        let canNang = document.getElementById('canNang').value;
+        let chieuCao = document.getElementById('chieuCao').value;
+        let bmi = canNang / ( Math.pow(chieuCao, 2) )
             let result = '';
             if (bmi < 18)
                 result = 'Underweight'
@@ -19,7 +19,6 @@
                 result = 'Overweight'
             else
                 result = 'Obese'
-            // document.getElementById('result').innerHTML
             document.getElementById("result").innerHTML = "Chỉ số BMI là: " + bmi + ". Bạn " + "<b>"+ result + "</b>";
         }
 </script>
@@ -28,11 +27,11 @@
 <table>
     <tr>
         <td>Nhập cân nặng: (kg)</td>
-        <td><input type="number"id="can_nang"value="weight"></td>
+        <td><input type="number"id="canNang"value="weight"></td>
     </tr>
     <tr>
         <td>Nhập chiều cao: (m)</td>
-        <td><input type="number"id="chieu_cao"value="height"></td>
+        <td><input type="number"id="chieuCao"value="height"></td>
     </tr>
 </table>
 <!--<button onclick="kiemtra()">Kiểm tra</button>-->

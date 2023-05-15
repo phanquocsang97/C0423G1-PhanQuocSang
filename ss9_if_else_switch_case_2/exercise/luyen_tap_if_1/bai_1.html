@@ -5,17 +5,18 @@
     <title>Title</title>
 </head>
 <body>
-<h1>a chia hết cho b</h1>
-<input type="number"id="no1"placeholder="nhập số">
-<input type="number"id="no2"placeholder="nhập số">
+<h1>a chia hết cho b</h1> ;
+<input type="number" id="no1" placeholder="nhập số"> ;
+<input type="number" id="no2" placeholder="nhập số"> ;
 <button onclick="result()" value="check">Check</button>
+;
 <script>
     function result() {
-        let ketqua = (+document.getElementById('no1').value) % (+document.getElementById('no2').value)
-        if  (ketqua == 0) {
-            alert('a chia hết cho b')
-        }else {
-            alert('a không chia hết cho b')
+        let ketQua = (+document.getElementById('no1').value) % (+document.getElementById('no2').value);
+        if (ketQua == 0) {
+            alert('a chia hết cho b');
+        } else {
+            alert('a không chia hết cho b');
         }
     }
 </script>

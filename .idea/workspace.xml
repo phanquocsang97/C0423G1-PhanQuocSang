@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="50f00338-1e10-4923-970d-a1ef7ddb051d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_2/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_2/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_2/luyen_tap_if.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_2/luyen_tap_if.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_3/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_3/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_3/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_3/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_4/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_4/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_4/luyen_tap_switchcase.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_4/luyen_tap_switchcase.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_5/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_5/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_5/toan_tu_ba_ngoi.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_5/toan_tu_ba_ngoi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_if_else_switch_case_2/exercise/luyen_tap_if_1/bai_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_if_else_switch_case_2/exercise/luyen_tap_if_1/bai_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_if_else_switch_case_2/exercise/luyen_tap_if_1/bai_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_if_else_switch_case_2/exercise/luyen_tap_if_1/bai_5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_if_else_switch_case_2/exercise/luyen_tap_if_2/bai_8.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_if_else_switch_case_2/exercise/luyen_tap_if_2/bai_8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_if_else_switch_case_2/exercise/luyen_tap_if_2/bai_9.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_if_else_switch_case_2/exercise/luyen_tap_if_2/bai_9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_if_else_switch_case_2/exercise/may_tinh_don_gian.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_if_else_switch_case_2/exercise/may_tinh_don_gian.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_if_else_switch_case_2/exercise/tinh_chi_so_can_nang.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_if_else_switch_case_2/exercise/tinh_chi_so_can_nang.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_if_else_switch_case_2/practice/su_kien_ban_phim_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_if_else_switch_case_2/practice/su_kien_ban_phim_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_if_else_switch_case_2/practice/thuc_hanh_1/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_if_else_switch_case_2/practice/thuc_hanh_1/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_if_else_switch_case_2/practice/thuc_hanh_1/su_kien_chuot.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_if_else_switch_case_2/practice/thuc_hanh_1/su_kien_chuot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_if_else_switch_case_2/practice/thuc_hanh_2/su_kien_ban_phim.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_if_else_switch_case_2/practice/thuc_hanh_2/su_kien_ban_phim.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2PawykPWs7ue3jTMpf8tPXOfmaS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CodeGym\Module 1\ss8_if_else_switchcase\practice\thuc_hanh_1" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="50f00338-1e10-4923-970d-a1ef7ddb051d" name="Default Changelist" comment="" />
+      <created>1683708756805</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683708756805</updated>
+      <workItem from="1683708757876" duration="634000" />
+      <workItem from="1683767336807" duration="16650000" />
+      <workItem from="1683854244219" duration="25130000" />
+      <workItem from="1683939718847" duration="952000" />
+      <workItem from="1684119257538" duration="594000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="495" y="210" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1683774737262">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="495" y="210" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.816@0.0.1536.816" timestamp="1683774737262" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/ss9_if_else_switch_case_2/exercise/luyen_tap_if_1/bai_1.html</url>
+          <line>10</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

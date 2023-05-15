@@ -2,9 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <script>
+        let imgNobita = null ;
+        imgNobita = document.getElementById('nobita')
+        function init () {
+            imgNobita = document.getElementById('nobita')
+            imgNobita.style.position = 'relative'
+            imgNobita.style.left = '0px'
+            imgNobita.style.top = '0px'
+        }
+        function goright() {
+            imgNobita.style.left = parseInt(imgNobita.style.left) + 10 + 'px';
+        }
+        function goleft() {
+            imgNobita.style.left = parseInt(imgNobita.style.left) - 10 + 'px';
+        }
+        function goup() {
+            imgNobita.style.top = parseInt(imgNobita.style.top) + 10 + 'px';
+        }
+        function godown() {
+            imgNobita.style.top = parseInt(imgNobita.style.top) - 10 + 'px';
+        }
+        window.onload = init();
+
+    </script>
 </head>
 <body>
-$END$
+<form>
+    <img src="https://upload.wikimedia.org/wikipedia/vi/2/2c/Nobita.png"
+         id="nobita"
+         style="position:absolute" alt="nobita" width="10%">
+    <br><br><br><br><br><br><br><br><br>
+    <p>Click button below to move right left up down</p>
+    <input type="button"value="move right"onclick="goright()">
+    <input type="button"value="move left"onclick="goleft()">
+    <input type="button"value="move up"onclick="goup()">
+    <input type="button"value="move down"onclick="godown()">
+</form>
 </body>
 </html>
