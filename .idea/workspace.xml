@@ -20,24 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50f00338-1e10-4923-970d-a1ef7ddb051d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_2/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_2/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_2/luyen_tap_if.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_2/luyen_tap_if.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_3/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_3/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_3/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_3/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_4/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_4/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_4/luyen_tap_switchcase.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_4/luyen_tap_switchcase.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_5/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_5/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_5/toan_tu_ba_ngoi.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss8_if_else_switchcase/practice/thuc_hanh_5/toan_tu_ba_ngoi.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss9_if_else_switch_case_2/exercise/luyen_tap_if_1/bai_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_if_else_switch_case_2/exercise/luyen_tap_if_1/bai_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss9_if_else_switch_case_2/exercise/luyen_tap_if_1/bai_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_if_else_switch_case_2/exercise/luyen_tap_if_1/bai_5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss9_if_else_switch_case_2/exercise/luyen_tap_if_2/bai_8.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_if_else_switch_case_2/exercise/luyen_tap_if_2/bai_8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss9_if_else_switch_case_2/exercise/luyen_tap_if_2/bai_9.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_if_else_switch_case_2/exercise/luyen_tap_if_2/bai_9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss9_if_else_switch_case_2/exercise/may_tinh_don_gian.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_if_else_switch_case_2/exercise/may_tinh_don_gian.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss9_if_else_switch_case_2/exercise/tinh_chi_so_can_nang.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_if_else_switch_case_2/exercise/tinh_chi_so_can_nang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss9_if_else_switch_case_2/practice/su_kien_ban_phim_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_if_else_switch_case_2/practice/su_kien_ban_phim_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss9_if_else_switch_case_2/practice/thuc_hanh_1/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_if_else_switch_case_2/practice/thuc_hanh_1/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss9_if_else_switch_case_2/practice/thuc_hanh_1/su_kien_chuot.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_if_else_switch_case_2/practice/thuc_hanh_1/su_kien_chuot.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss9_if_else_switch_case_2/practice/thuc_hanh_2/su_kien_ban_phim.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_if_else_switch_case_2/practice/thuc_hanh_2/su_kien_ban_phim.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu_va_toan_tu/exercise/bai_tap_1/chu_vi_hinh_tron.js" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu_va_toan_tu/exercise/bai_tap_1/chu_vi_hinh_tron.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +71,7 @@
       <workItem from="1683767336807" duration="16650000" />
       <workItem from="1683854244219" duration="25130000" />
       <workItem from="1683939718847" duration="952000" />
-      <workItem from="1684119257538" duration="594000" />
+      <workItem from="1684119257538" duration="1015000" />
     </task>
     <servers />
   </component>
