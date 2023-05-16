@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    for(i = 0; ; i ++){
+        let money = +prompt('Nhập số tiền vay: ');
+        let month = +prompt('Nhập số tháng cho vay: ');
+        if (month < 6){
+            rate = money*5/100
+            alert('lãi suất ngân hàng là 5%: ' + rate);
+        } else if (month <= 12){
+            rate = money*10/100
+            alert('lãi suất ngân hàng là 10%: ' + rate );
+        } else if (month > 12) {
+            rate = money*20/100
+            alert('lãi suất ngân hàng là 20%: ' + rate);
+        } else {
+            alert('Vui lòng nhập lại');
+        }
+    }
+</script>
+</body>
+</html>

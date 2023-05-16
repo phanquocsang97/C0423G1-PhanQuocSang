@@ -5,11 +5,31 @@
     <title>Title</title>
 </head>
 <body>
-<button onclick="getNumber">Bắt đầu</button>
+<button onclick="play()">Bắt đầu</button>
 <script>
-    function getNumber() {
-        let num = +prompt('Số bạn muốn đoán là bao nhiêu ?')
+    function play() {
+        let no1 = +prompt('Số bạn muốn đoán bắt đầu từ số ?');
+        let no2 = +prompt('đến');
+        alert("Bạn sẽ đoán từ " + no1 + " đến " + no2);
 
+        let random = Math.round(Math.random() * (no2 - no1) + no1);
+        for (let i = 0; i < 3; i++) {
+            let doan = +prompt("Đoán lần thứ " + (i + 1));
+            if (doan === random) {
+                alert("Bạn Thắng");
+                break;
+            } else if (doan < random) {
+                alert("Số bạn đoán bé hơn");
+            } else if (doan > random) {
+                alert("Số bạn đoán lớn hơn");
+            } else {
+                alert("vui lòng đoán lại.");
+            }
+            if (i === 2) {
+                document.getElementById("btnStartGame").innerText = "Chơi lại"
+
+            }
+        }
     }
 </script>
 </body>
