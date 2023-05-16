@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b = 1;
+    let tong = 0;
+    for (i = 0; i < 5; i++) {
+        tong = a + b;
+        a = b;
+        b = tong;
+        if (tong % 5 === 0) {
+            document.write('Số cần tìm là ' + tong + '<br/>')
+        }
+    }
+</script>
+
+</body>
+</html>
