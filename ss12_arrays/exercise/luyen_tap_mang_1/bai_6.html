@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [];
+    for (let i = 0; i < 10; i++) {
+        array[i] = +prompt('Nhập phần tử số ' + (i + 1));
+    }
+    let V = +prompt('Nhập số V');
+    let b = false;
+    for (let i = 0; i < 10; i++) {
+        if (array[i] === V) {
+            b = array[i]
+        }
+    }
+    if (b === V) {
+        document.write('V thuộc dãy số');
+    } else {
+        document.write('V không thuộc dãy số');
+    }
+
+
+</script>
+</body>
+</html>
