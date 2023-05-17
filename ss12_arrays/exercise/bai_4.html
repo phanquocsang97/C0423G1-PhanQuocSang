@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt('Nhập số phần tử số nguyên');
+    let array = [];
+    let first = 0;
+    for (let i = 0; i < n; i++) {
+        array[i] = +prompt('Nhập số thứ ' + (i + 1));
+    }
+    let last = array.length - 1;
+    let c = 0;
+    for (let i = first, j = last; i < j; i++ , j--) {
+        c = array[i];
+        array[i] = array[j];
+        array[j] = c;
+    }
+    console.log(array);
+    document.write(array);
+</script>
+</body>
+</html>

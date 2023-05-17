@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt('Nhập số phần tử số nguyên');
+    let array = [];
+    let sum = 0;
+    for (let i = 0; i < n; i++) {
+        array[i] = +prompt('Nhập số thứ ' + (i + 1));
+        sum += array[i];
+    }
+    document.write('giá trị trung bình là ' + sum / n + '<br/>')
+    let max = array[0];
+    for (let i = 0; i < n; i++) {
+        if (array[i] > max) {
+            max = array[i];
+        }
+    }
+    document.write('giá trị lớn nhất là ' + max);
+</script>
+</body>
+</html>

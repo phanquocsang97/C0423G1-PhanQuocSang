@@ -2,9 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    // bài 1
+    // let arr = ["Red", "Green", "White", "Black"];
+    // // document.writeln(arr.toString(''));
+    // document.writeln(arr.join());
+
+    // bài 2 025468
+    // let num = prompt('Nhập dãy số bất kì');
+    // let str = num.toString();
+    // let array = [str[0]];
+    // for (let i =1 ; i < str.length ; i++){
+    //     if (str[i] % 2 === 0 && str[i - 1] % 2 === 0 ){
+    //         array.push('-', str[i]);
+    //     }else {
+    //         array.push(str[i]);
+    //     }
+    // }document.writeln(array.join(''));
+
+    // bài 3
+    let str = 'The Quick Brown Fox';
+    let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let LOWER = 'abcdefghijklmnopqrstuvwxyz';
+    let result = [];
+
+    for(let x=0; x<str.length; x++)
+    {
+        if(UPPER.indexOf(str[x]) !== -1)
+        {
+            result.push(str[x].toLowerCase());
+        }
+        else if(LOWER.indexOf(str[x]) !== -1)
+        {
+            result.push(str[x].toUpperCase());
+        }
+        else
+        {
+            result.push(str[x]);
+        }
+    }
+    document.writeln(result.join(''));
+
+
+
+
+
+
+</script>
 </body>
 </html>

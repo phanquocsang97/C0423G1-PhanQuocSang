@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p> Nhập từ :</p>
+<input type="text" name="" id="engLish">
+<button onclick="transl()">Dịch</button>
+<p id="ketQua"></p>
+<script>
+    function transl() {
+        let a = ['red', 'yellow', 'green', 'black', 'brown', 'blue'];
+        let b = ['đỏ', 'vàng', 'xanh lá', 'đen', 'nâu', 'xanh da trời'];
+        let tuDien = document.getElementById("engLish").value;
+        for (let i = 0; i < a.length; i++) {
+            if (tuDien == a[i]) {
+                document.getElementById("ketQua").innerHTML= b[i];
+                break;
+            } else {
+                document.getElementById("ketQua").innerHTML= 'Lỗi ';
+
+            }
+        }
+    }
+</script>
+</body>
+</html>
