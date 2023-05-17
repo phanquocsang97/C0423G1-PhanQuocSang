@@ -6,25 +6,25 @@
 </head>
 <body>
 <script>
-    // Kiểm tra được số nguyên tố và in ra số đó
-    // Lặp lại đủ 20 lần.
-    // đếm số nguyên tố đã tìm được.
-    let countPrimeFound = 0;
-    let number = 2;
-    do {
-        // số tự nhiên
-        let count = 0; // biến này để đếm ước của number.
-        for (let i = 1; i <= number ; i++) {
-            if(number % i === 0){
-                count++;
+    let number = parseInt(prompt("Nhập n số nguyên tố đầu tiên: "));
+    let uocSo = 0;
+    let countSNT = 0;
+    for (let i = 2; i >= 2 ; i++) {
+        if (countSNT < number) {
+            for (let j = 1; j <= i; j++) {
+                if (i % j === 0) {
+                    uocSo += 1;
+                }
             }
+            if (uocSo === 2) {
+                document.write(i + "<br>");
+                countSNT += 1;
+            }
+            uocSo = 0;
+        } else {
+            break;
         }
-        if(count === 2) { // nếu số ước bằng 2 thì number là số nguyên tố.
-            document.write(number + " là số nguyên tố. <br>" );
-            countPrimeFound++;
-        }
-        number++;
-    } while (countPrimeFound < 20);
+    }
 
 
 </script>

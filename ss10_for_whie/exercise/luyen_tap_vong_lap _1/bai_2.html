@@ -6,17 +6,18 @@
 </head>
 <body>
 <script>
-    let tem = +prompt('Input your temperature')
-    while (tem < 20 || tem > 100){
-        if (tem < 20){
-            alert('Nhiệt độ quá thấp')
-            tem = +prompt('Vui lòng tăng nhiệt độ')
+    let tem = +prompt('Input your temperature');
+    while (tem < 20 || tem > 100) {
+        if (tem < 20) {
+            alert('Nhiệt độ quá thấp');
+            tem = +prompt('Vui lòng tăng nhiệt độ');
 
-        }else if (tem > 100) {
-            alert('Nhiệt độ quá cao')
-            tem = +prompt('Vui lòng giảm nhiệt độ')
+        } else if (tem > 100) {
+            alert('Nhiệt độ quá cao');
+            tem = +prompt('Vui lòng giảm nhiệt độ');
         }
-    }alert('Nhiệt độ bình thường')
+    }
+    alert('Nhiệt độ bình thường');
 </script>
 </body>
 </html>
