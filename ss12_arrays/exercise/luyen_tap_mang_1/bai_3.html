@@ -6,11 +6,11 @@
 </head>
 <body>
 <script>
-    let n = +prompt('Nhập số phần tử số nguyên');
+    let n = prompt('Nhập số phần tử số nguyên');
     let array = [];
     let sum = 0;
     for (let i = 0; i < n; i++) {
-        array[i] = +prompt('Nhập số thứ ' + (i + 1));
+        array[i] = prompt('Nhập số thứ ' + (i + 1));
         sum += array[i];
     }
     document.write('giá trị trung bình là ' + sum / n + '<br/>')
