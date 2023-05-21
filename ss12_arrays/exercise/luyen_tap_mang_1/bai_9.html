@@ -6,22 +6,37 @@
 </head>
 <body>
 <script>
-    // let array1 = [];
-    // let array2 = [];
-    // for (let i = 0; i < 10; i++) {
-    //     array1[i] = prompt('Nhập số thứ ' + (i + 1) + ' của mảng 1');
-    // }
-    // for (let j = 0; j < 10; j++) {
-    //     array2[j] = prompt('Nhập số thứ ' + (j + 1) + ' của mảng 2');
-    // }
-    // let array3 = array1.concat(array2);
-    // document.write(array3);
-    let array = prompt('Nhập 10 số');
-    let array2 = prompt('Nhập tiếp 10 số');
-    let b = array.split('');
-    let c = array2.split('');
-    let d = [b, c];
-    document.write(d);
+    let arr1 = [];
+    let arr2 = [];
+    for (let i = 0; i < 10; i++) {
+        do {
+            arr1[i] = prompt(' nhập phần tử thứ ' + (i + 1) + ' của mảng thứ nhất');
+        } while (isNaN(arr1[i]));
+    }
+    for (let j = 0; j < 10; j++) {
+        do {
+            arr2[j] = +prompt(' nhập phần tử thứ ' + (j + 1) + ' của mảng thứ hai');
+        } while (isNaN(arr2[j]));
+    }
+    let arr3;
+    arr3 = arr1.concat(arr2);
+    document.write(arr3);
+    // // let array1 = [];
+    // // let array2 = [];
+    // // for (let i = 0; i < 10; i++) {
+    // //     array1[i] = prompt('Nhập số thứ ' + (i + 1) + ' của mảng 1');
+    // // }
+    // // for (let j = 0; j < 10; j++) {
+    // //     array2[j] = prompt('Nhập số thứ ' + (j + 1) + ' của mảng 2');
+    // // }
+    // // let array3 = array1.concat(array2);
+    // // document.write(array3);
+    // let array = prompt('Nhập 10 số');
+    // let array2 = prompt('Nhập tiếp 10 số');
+    // let b = array.split('');
+    // let c = array2.split('');
+    // let d = [b, c];
+    // document.write(d);
 </script>
 </body>
 </html>

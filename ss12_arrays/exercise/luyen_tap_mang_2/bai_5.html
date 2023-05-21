@@ -8,26 +8,24 @@
 <script>
     let array1 = [];
     let array2 = [];
-    let n1 = prompt('Số phần tử của chuỗi đầu tiên là ');
-    let n2 = prompt('Số phần tử của chuỗi thứ hai là ');
-    for (let i = 0; i < n1; i++) {
+    for (let i = 0; i < 3; i++) {
         array1[i] = prompt('Nhập số thứ ' + (i + 1) + ' của chuỗi 1');
     }
-    for (let j = 0; j < n2; j++) {
+    for (let j = 0; j < 3; j++) {
         array2[j] = prompt('Nhập số thứ ' + (j + 1) + ' của chuỗi 2');
     }
     let count = 0;
-    for (let i = 0; i < n1; i++) {
-        for (let j = 0; j < n2; j++) {
-            if (array1[i] === array2[j]) {
+    for (let i = 0; i < array1.length; i++) {
+        for (let j = 0; j < array2.length; j++) {
+            if (array2[j] === array1[i]) {
                 count++;
             }
         }
     }
     if (count === 0) {
-        document.write('2 mảng khác nhau');
+        document.write('2 chuỗi khác nhau');
     } else {
-        document.write('2 mảng giống nhau');
+        document.write('2 chuỗi giống ' + count + ' phần tử');
     }
 </script>
 </body>
