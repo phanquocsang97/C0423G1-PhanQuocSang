@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function check() {
+        let arr = a.split('');
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (b === arr[i]) {
+                count++;
+            }
+        }
+        if (count === 0) {
+            return -1;
+        } else {
+            return count;
+        }
+    }
+
+    let a = prompt('Nhập vào mảng bất kì');
+    let b = prompt('Nhập một kí tự bất kì');
+    alert(check(a));
+</script>
+</body>
+</html>

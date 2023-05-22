@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function changePositon(x) {
+        let arr = x.split('');
+        let first = 0;
+        let last = arr.length - 1;
+        let a = 0;
+        for (let i = 0; i < last; i++) {
+            a = arr[last];
+            arr[last] = arr[first];
+            arr[first] = a;
+            first++;
+            last--;
+        }
+        return arr;
+    }
+
+    let n = prompt('Nhập mảng số nguyên bất kì');
+    alert(changePositon(n));
+
+</script>
+</body>
+</html>

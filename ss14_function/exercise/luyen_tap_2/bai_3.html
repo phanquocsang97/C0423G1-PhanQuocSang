@@ -6,6 +6,16 @@
 </head>
 <body>
 <script>
+    function getNumber(number) {
+        let a = 1;
+        for (let i = 1; i <= number; i++) {
+            a = a * i;
+        }
+        return a;
+    }
+
+    let giaiThua = +prompt("Nhập một số nguyên để tính giai thừa");
+    alert(getNumber(giaiThua));
 
 </script>
 </body>

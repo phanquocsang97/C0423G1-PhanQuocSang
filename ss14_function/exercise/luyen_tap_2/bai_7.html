@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function changePosition(x) {
+        let arr = x.split('');
+        let a = 0;
+        a = arr[0];
+        arr[0] = arr[1];
+        arr[1] = a;
+        return arr;
+    }
+
+    let n = prompt('Nhập vào 2 số nguyên bất kì');
+    alert(changePosition(n));
+</script>
+</body>
+</html>
