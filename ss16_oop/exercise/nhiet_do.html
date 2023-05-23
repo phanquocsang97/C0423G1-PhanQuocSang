@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class temperature {
+        constructor(doC) {
+            this.doC = doC;
+        }
+
+        doF() {
+            return 'Nhiệt độ F là ' + (this.doC + 32);
+        }
+
+        doK() {
+            return 'Nhiệt độ Kenvin là ' + (this.doC + 273);
+        }
+    }
+
+    let a = new temperature(25);
+    document.write(a.doF());
+    document.write('<br/>' + a.doK());
+</script>
+</body>
+</html>

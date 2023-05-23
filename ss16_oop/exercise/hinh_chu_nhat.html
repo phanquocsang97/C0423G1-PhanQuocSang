@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class retangle {
+        constructor(width, length) {
+            this.width = width;
+            this.length = length;
+        }
+
+        chuVi() {
+            return 'Chu vi hình chữ nhật là ' + ((this.width + this.length) * 2);
+        }
+
+        dienTich() {
+            return 'Diện tích hình chữ nhật là ' + (this.width * this.length);
+        }
+    }
+
+    let hinh1 = new retangle(5, 10);
+    document.write(hinh1.chuVi());
+    document.write('<br/>' + hinh1.dienTich());
+</script>
+</body>
+</html>

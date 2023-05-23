@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*
+    Student
+        id
+        name
+        score
+        run() => hành động
+     */
+    function Student(id, name, score) {
+        this.id = id;// this giúp tạo ra thuộc tính và phương thức
+        this.name = name;
+        this.score = score;
+
+        this.run = function () { // Phương thức
+            document.write(`<span style="color: red">${this.name}</span> có thể chạy nhanh`);
+        }
+    }
+
+    let s1 = new Student(1, 'Hoàn Thiện', 5.5);
+    let s2 = new Student(2, 'Cương', 8);
+    let s3 = new Student(3, 'Hạnh', 7);
+    // s1.run();
+    document.write(s2.score)
+</script>
+</body>
+</html>
