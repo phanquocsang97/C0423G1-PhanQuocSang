@@ -20,7 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50f00338-1e10-4923-970d-a1ef7ddb051d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ss14_function/pratice/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss17_opp_2/exercise/adam_eva.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss17_opp_2/exercise/bong_den.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss17_opp_2/exercise/game_don_gian.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss14_function/exercise/quan_li_san_pham.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss14_function/exercise/quan_li_san_pham.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss14_function/pratice/thuc_hanh_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss14_function/pratice/thuc_hanh_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss14_function/pratice/thuc_hanh_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss14_function/pratice/thuc_hanh_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss14_function/pratice/thuc_hanh_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss14_function/pratice/thuc_hanh_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss16_oop/exercise/dien_thoai.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss16_oop/exercise/dien_thoai.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss16_oop/practice/thuc_hanh_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss16_oop/practice/thuc_hanh_1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu_va_toan_tu/exercise/bai_tap_1/chu_vi_hinh_tron.js" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu_va_toan_tu/exercise/bai_tap_1/chu_vi_hinh_tron.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +81,19 @@
       <workItem from="1683767336807" duration="16650000" />
       <workItem from="1683854244219" duration="25130000" />
       <workItem from="1683939718847" duration="952000" />
-      <workItem from="1684119257538" duration="1015000" />
+      <workItem from="1684119257538" duration="12484000" />
+      <workItem from="1684203248185" duration="8571000" />
+      <workItem from="1684223119683" duration="5211000" />
+      <workItem from="1684246148450" duration="2590000" />
+      <workItem from="1684292631816" duration="19906000" />
+      <workItem from="1684321190457" duration="1821000" />
+      <workItem from="1684376430365" duration="17385000" />
+      <workItem from="1684465807832" duration="5854000" />
+      <workItem from="1684644193145" duration="1154000" />
+      <workItem from="1684722716521" duration="17867000" />
+      <workItem from="1684803829689" duration="12799000" />
+      <workItem from="1684897297792" duration="15072000" />
+      <workItem from="1684935276066" duration="4657000" />
     </task>
     <servers />
   </component>

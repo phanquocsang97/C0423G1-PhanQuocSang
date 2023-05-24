@@ -5,15 +5,91 @@
     <title>Title</title>
 </head>
 <body>
+<h1>Add New Product</h1>
+<div>
+    <input type="text" id="product" placeholder="New Product">
+    <button onclick="addProduct()" style="background-color: limegreen">Add</button>
+</div>
+<hr>
+<table style="width: 500px">
+    <tr>
+        <td>Product name</td>
+        <td>0 product</td>
+    </tr>
+</table>
+<div id="tableProduct"></div>
 <script>
-    class Product{
+    class Product {
         constructor(id, name, price) {
             this.id = id;
             this.name = name;
             this.price = price;
         }
     }
-    let 
+
+    let product1 = new Product(1, "Sony", 1000);
+    let product2 = new Product(2, "Samsung", 500);
+    let product3 = new Product(3, "Nokia", 100);
+    let productList = [];
+    productList.push(product1, product2, product3);
+
+    displayProductList(productList);
+
+    function displayProductList(list) {
+        let tableStr = "<table border='1' style='border-collapse: collapse'>"
+        tableStr += "<tr>" +
+            "<th> # </th>" +
+            "<th> Tên sản phẩm </th>" +
+            "<th> Giá sản phẩm </th>" +
+        "<th colspan='2'> Thao tác </th>" +
+            "</tr>";
+        for (let i = 0; i < list.length; i++) {
+            tableStr += `<tr id='pro${i}'>`
+            tableStr += "<td>" + (i + 1) + "</td>>"
+            tableStr += "<td>" + list[i].name + "</td>"
+            tableStr += "<td>" + list[i].price + "</td>"
+            tableStr += "<td>" + "<button onclick='editProduct(" + i + ")'>Edit</button>" + "</td>"
+            tableStr += "<td>" + "<button onclick='deleteProduct(" + i + ")'>Delete</button>" + "</td>"
+            tableStr += "</tr>"
+        }
+        tableStr += "</table>"
+        document.getElementById("tableProduct").innerHTML = tableStr;
+    }
+
+    function addProduct() {
+        let addProduct1 = document.getElementById("product").value;
+        let newProduct = new Product(1, addProduct1);
+        productList.push(newProduct)
+        displayProductList(productList);
+        // document.getElementById("product").value = "";
+    }
+    function deleteProduct(indexProduct) {
+        productList.splice(indexProduct, 1)
+        displayProductList(productList);
+    }
+    function editProduct(i) {
+        // vẽ 1 ô edit + nút save
+        // lấy giá trị ô edit
+        // gắn giá trị mới vào giá trị cũ
+        // in lại màn hình
+        let text = `
+                <td></td>
+              <td><input type="text" id="a${i}"></td>
+              <td><input type="text" id="b${i}"></td>
+               <td colspan="2"><button onclick="saveProduct(${i})">save</button></td>
+            `
+        document.getElementById(`pro${i}`).innerHTML = text
+    }
+    function saveProduct(i) {
+        let newName = document.getElementById(`a${i}`).value
+        let newPrice = document.getElementById(`b${i}`).value
+        productList[i].name= newName ;
+        productList[i].price= newPrice;
+        displayProductList(productList);
+
+    }
 </script>
+
+
 </body>
 </html>

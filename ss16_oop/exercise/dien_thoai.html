@@ -2,14 +2,105 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>lớp mô tả điện thoại </title>
 </head>
 <body>
+<table border="1">
+    <tr>
+        <th>Samsung</th>
+        <th>Iphone</th>
+    </tr>
+    <tr>
+        <td><textarea id="88"></textarea></td>
+        <td><textarea id="99"></textarea></td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="samsung.soanTinNhan()"> Soạn tin nhắn</button>
+        </td>
+        <td>
+            <button onclick="iphone.soanTinNhan()"> Soạn tin nhắn</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="samsung.xemTinNhan()">Xem tin nhắn</button>
+        </td>
+        <td>
+            <button onclick="iphone.xemTinNhan()">Xem tin nhắn</button>
+        </td>
+    </tr>
+</table>
 <script>
-    class mobile {
-        constructor() {
+    class Mobile {
+        constructor(id, soDienThoai) {
+            this.id = id;
+            this.pin = 100;
+            this.tinDangSoan;
+            this.hopThuDen = [];
+            this.hopThuDaGui = [];
+            this.trangThai = true;
+            this.soDienThoai = soDienThoai;
+        }
+
+        batDienThoai() {
+            alert("Đã bật!");
+            this.trangThai = true;
+        }
+
+        tatDienThoai() {
+            alert("Đã tắt!");
+            this.trangThai = false;
+        }
+
+        sacPin() {
+            this.pin = 100;
+            alert("Pin đầy!");
+        }
+
+        soanTinNhan() {
+            this.tinDangSoan = prompt("Mời bạn nhập tin nhắn: ");
+            let xacNhanGui = confirm("Bạn có muốn gửi cho ai không?");
+            if (xacNhanGui) {
+                let soDienThoaiNguoiNhan = +prompt("hãy nhập số điện thoại người nhận");
+                this.guiTinNhan(this.tinDangSoan, soDienThoaiNguoiNhan);
+            }
+        }
+
+        guiTinNhan(tinNhan, soDienThoaiNguoiNhan) {
+            let viTriCuaSDT = khoLuuSDT.indexOf(soDienThoaiNguoiNhan);
+            if (viTriCuaSDT !== -1) {
+                alert("Sẽ gửi cho số " + soDienThoaiNguoiNhan);
+                let dienThoaiCanNhan = khoLuuDienThoai[viTriCuaSDT];
+                dienThoaiCanNhan.nhanTinNhan(tinNhan + " từ số " + this.soDienThoai);
+            } else {
+                alert("Không tìm thấy số điện thoại này.");
+            }
+        }
+
+        nhanTinNhan(tinNhan) {
+            this.hopThuDen.push(tinNhan);
+        }
+
+        xemTinNhan() {
+            let tatCaTinNhan = "";
+            for (let i = 0; i < this.hopThuDen.length; i++) {
+                tatCaTinNhan += this.hopThuDen[i] + "\n";
+            }
+            let idScreen = "" + this.soDienThoai;
+            document.getElementById(idScreen).value = tatCaTinNhan;
         }
     }
+
+    let khoLuuSDT = [];
+    let khoLuuDienThoai = [];
+
+    let samsung = new Mobile(1, 88);
+    let iphone = new Mobile(1, 99);
+    khoLuuDienThoai.push(samsung, iphone);
+    khoLuuSDT.push(samsung.soDienThoai, iphone.soDienThoai);
+
+
 </script>
 </body>
 </html>

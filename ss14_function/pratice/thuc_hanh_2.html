@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<p>
+    <label>Fahrenheit</label>
+    <input type="number" id="InputFahrenheit"placeholder="Fahrenheit"
+    oninput="temperatureConverter(this.value)"
+    onchange="temperatureConverter(this.value)">
+</p>
+<p>Celius :<span id="outputCelius"></span></p>
+<script>
+    function temperatureConverter(valNum){
+        valNum = parseFloat(valNum);
+        document.getElementById('outputCelius').innerHTML = (valNum -32);
+    }
+</script>
 </body>
 </html>

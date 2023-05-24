@@ -6,47 +6,52 @@
 </head>
 <body>
 <script>
-    let MyDate = function (day, month, year) {
+    function Hero(image, top, left, size) {
+        this.image = image;
+        this.top = top;
+        this.left = left;
+        this.size = size;
 
-        this.day = day;
-
-        this.month = month;
-
-        this.year = year;
-
-        this.getDay = function () {
-            return this.day;
-        }
-        this.getMonth = function () {
-            return this.month;
-        }
-        this.getYear = function () {
-            return this.year;
-        }
-        this.setDay = function (day) {
-            this.day = day;
-        }
-        this.setMonth = function (month) {
-            this.month = month;
-        }
-        this.setYear = function (year) {
-            this.year = year;
+        this.getHeroElement = function () {
+            return '<img width="' + this.size + '"' +
+                ' height="' + this.size + '"' +
+                ' src="' + this.image + '"' +
+                ' style="top: ' + this.top + 'px; left:' + this.left + 'px;position:absolute;" />';
         }
 
-    };
-    let date = new MyDate(2, 2, 2007);
+        this.moveRight = function () {
+            this.left += 20;
+            console.log('ok: ' + this.left);
+        }
+        this.moveLeft = function () {
+            this.left -= 20;
+            console.log('ok: ' + this.left);
+        }
+    }
 
+    var hero = new Hero('https://thuthuatnhanh.com/wp-content/uploads/2022/06/Anh-sieu-nhan-mau-do.jpg', 20, 30, 200);
+    let flag = true;
 
-    date.setDay(10);
-    date.setMonth(10);
-    date.setYear(2019);
-    let day = date.getDay(); // 2
+    function start() {
+        if (hero.left < window.innerWidth - hero.size && flag) {
+            hero.moveRight();
+        } else {
+            flag = false;
+            moveLeft();
+        }
+        document.getElementById('game').innerHTML = hero.getHeroElement();
+        setTimeout(start, 0);
+    }
 
-    let month = date.getMonth(); // 2
+    function moveLeft() {
+        hero.moveLeft();
+        if (hero.left <= hero.size) {
+            flag = true;
+        }
+    }
 
-    let year = date.getYear(); // 2007
-
-    alert(day + "/" + month + "/" + year);
+    start();
+</script>
 </script>
 </body>
 </html>
