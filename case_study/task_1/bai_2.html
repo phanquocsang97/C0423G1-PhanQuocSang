@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let word = +prompt('Nhập kí tự bất kì');
+    let arr = ['O', 'U', 'I', 'A', 'E', 'o', 'u', 'i', 'a', 'e'];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === word) {
+            alert('Kí tự nhập vào là nguyên âm');
+        } else {
+            alert('Kí tự nhập vào là phụ âm');
+        }
+    }
+</script>
+</body>
+</html>

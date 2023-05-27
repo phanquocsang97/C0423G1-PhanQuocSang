@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let salary = +prompt('Nhập mức lương của bạn');
+    while (isNaN(salary)) {
+        salary = +prompt('Vui lòng nhập dữ liệu số');
+    }
+    let tax = 0;
+    if (salary <= 7000000) {
+        tax = salary * 0.05;
+        alert('Mức thuế phải đóng là : ' + tax);
+        alert('Mức lương ròng là : ' + (salary - tax));
+    } else if (salary <= 15000000) {
+        tax = salary * 0.1;
+        alert('Mức thuế phải đóng là : ' + tax);
+        alert('Mức lương ròng là : ' + (salary - tax));
+    } else {
+        tax = salary * 0.2;
+        alert('Mức thuế phải đóng là : ' + tax);
+        alert('Mức lương ròng là : ' + (salary - tax));
+    }
+
+
+</script>
+</body>
+</html>
