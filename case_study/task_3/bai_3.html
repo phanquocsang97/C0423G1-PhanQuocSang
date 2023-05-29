@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1 = [5, 2, 5];
+    let arr2 = [6, 3, 4];
+    let max = 0;
+    let index = 0;
+    for (let i = 0; i < arr1.length; i++) {
+        if (arr1[i] / arr2[i] > max) {
+            max = arr1[i] / arr2[i];
+            index = i;
+        }
+    }
+    document.write(`Phân số lớn nhất là ${arr1[index]} / ${arr2[index]} <br/>`);
+    document.write('Có chỉ số là ' + index);
+</script>
+</body>
+</html>

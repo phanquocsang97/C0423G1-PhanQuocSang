@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1 = prompt('Nhập vào một chuỗi bất kì');
+    arr1 = arr1.split(' ');
+    let arr2 = [];
+    for (let i = 0; i < arr1.length; i++) {
+        if (arr1[i] !== '') {
+            arr2.push(arr1[i]);
+        }
+    }
+    let box = '';
+    let max = 0;
+    let wordMax = [];
+    for (let i = 0; i < arr2.length; i++) {
+        arr2[i] = arr2[i].toLowerCase();
+        box = arr2[i].split('');
+        box[0] = box[0].toUpperCase();
+        box = box.join('');
+        arr2[i] = box;
+        if (arr2[i].length > max) {
+            max = arr2[i];
+            wordMax = max;
+        }
+    }
+    arr2 = arr2.join(' ');
+    document.write(arr2 + '<br>' + ' kí tự lớn nhất là ' + wordMax);
+</script>
+</body>
+</html>

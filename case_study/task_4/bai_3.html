@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1 = 'aabcc';
+    arr1 = arr1.split('');
+    let arr2 = 'adcaa';
+    arr2 = arr2.split('');
+    let count = 0;
+    let count1 = 0;
+    let arr3 = [];
+    let index1 = 0;
+    let index2 = 0;
+    for (let i = 0; i < arr1.length; i++) {
+        for (let j = 0; j < arr2.length; j++) {
+            if (arr1[i] === arr2[j]) {
+                arr3.push(arr2[j]);
+                arr2.splice(j, 1);
+                count++;
+                break;
+            }
+        }
+    }
+    for (let i = 0; i < arr3.length; i++) {
+        if (arr3[i] === arr3[i + 1]) {
+            count1 += 2;
+            index1 = i;
+        } else {
+            index2 = i;
+        }
+    }
+    document.write('Số kí tự chung là ' + count + '<br/>');
+    document.write(count1 + ' kí tự ' + arr3[index1] + ' và ' + '1 kí tự ' + arr3[index2]);
+
+
+</script>
+</body>
+</html>
