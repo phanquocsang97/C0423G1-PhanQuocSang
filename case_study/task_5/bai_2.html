@@ -6,16 +6,31 @@
 </head>
 <body>
 <script>
-    let m = +prompt('Nhập số hàng của mảng');
-    let n = +prompt('Nhập số cột của mảng');
-    let arr = [];
-    let count = 0;
-    for (let i = 2; i < m; i++) {
-        arr[i] = [];
-        for (let j = 1; j < n; j++) {
+    function isPrime(number) {
+        let count = 0;
+        for (let i = 1; i <= number; i++) {
+            if (number % i === 0) {
+                count++;
+            }
+        }
+        return count === 2;
+    }
 
+    let m = +prompt('Nhập m');
+    let n = +prompt('Nhập n');
+    let arr = [];
+    let countPrime = 0;
+    for (let i = 0; i < m; i++) {
+        arr[i] = [];
+        for (let j = 0; j < n; j++) {
+            arr[i][j] = +prompt(`${i} , ${j}`);
+            if (isPrime(arr[i][j])) {
+                countPrime++;
+                document.write(arr[i][j] + ' là số nguyên tố' + '<br>');
+            }
         }
     }
+    document.write('Tổng số nguyên tố là ' + countPrime);
 </script>
 </body>
 </html>

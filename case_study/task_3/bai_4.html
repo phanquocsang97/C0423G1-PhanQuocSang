@@ -6,18 +6,17 @@
 </head>
 <body>
 <script>
-    let order = 0;
     do {
-        order = +prompt('Danh sách đồ uống là \n 1.cafe\n 2.cam vắt\n 3.nước ép cà rốt\n 4.nước ép cà chua\n 5.nước lọc\n 6.nước dừa\n 7.thoát gọi món');
+        let order = +prompt('Danh sách đồ uống là \n 1.cafe\n 2.cam vắt\n 3.nước ép cà rốt\n 4.nước ép cà chua\n 5.nước lọc\n 6.nước dừa\n 7.thoát gọi món');
         if (order < 7) {
-            alert('Đồ uống đồng giá 15000');
+            alert('Đồ uống có giá ' + (order * 12500));
             let number = +prompt('Nhập số lượng bạn muốn order');
             let sum = number * 15000;
             alert('Số tiền phải thanh toán là ' + sum);
         } else if (order === 7) {
             break;
         }
-    } while (order > 7);
+    } while (true);
 
 </script>
 </body>
