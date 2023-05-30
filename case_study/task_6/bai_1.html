@@ -43,13 +43,13 @@
             "<th>Ngày sinh</th>" +
             "</tr>";
         for (let i = 0; i < List.length; i++) {
-            tableStr += `<tr>`
-            tableStr += "<td>" + List[i].id + "</td>"
-            tableStr += "<td>" + List[i].name + "</td>"
-            tableStr += "<td>" + List[i].grade + "</td>"
-            tableStr += "<td>" + List[i].email + "</td>"
-            tableStr += "<td>" + List[i].date + "</td>"
-            tableStr += `</tr>`
+            tableStr += `<tr>`;
+            tableStr += "<td>" + List[i].id + "</td>";
+            tableStr += "<td>" + List[i].name + "</td>";
+            tableStr += "<td>" + List[i].grade + "</td>";
+            tableStr += "<td>" + List[i].email + "</td>";
+            tableStr += "<td>" + List[i].date + "</td>";
+            tableStr += `</tr>`;
         }
         tableStr += "</table>"
         document.getElementById("tableStudent").innerHTML = tableStr;
@@ -68,13 +68,27 @@
         displayStudentList(studentList);
     }
 
+    function editStudent() {
+        let n = prompt('Nhập id cần sửa');
+        for (let i = 0; i < studentList.length; i++) {
+            if (n === studentList[i].id) {
+                studentList[i].id = prompt('Sửa mã sinh viên : (cú pháp: HV-0001)');
+                studentList[i].name = prompt('Sửa tên sinh viên :');
+                studentList[i].lop = prompt('Sửa lớp');
+                studentList[i].email = prompt('Sửa email');
+                studentList[i].dateOfBirth = prompt('Sửa ngày sinh ');
+            }
+        }
+        displayStudentList(studentList);
+    }
+
     function deleteStudent() {
         let n = prompt('Nhập id cần xóa');
         let flag = false;
         for (let i = 0; i < studentList.length; i++) {
             if (n === studentList[i].id) {
                 flag = true;
-                if (confirm('Em chắc chưa ?')) {
+                if (confirm('Bạn có chắc chắn muốn xóa không ?')) {
                     studentList.splice(i, 1);
                 }
             }
@@ -85,9 +99,7 @@
         }
         displayStudentList(studentList);
     }
-    function editStudent() {
 
-    }
 </script>
 </body>
 </html>
