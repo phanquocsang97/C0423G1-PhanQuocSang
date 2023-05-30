@@ -8,13 +8,36 @@
 <script>
     do {
         let order = +prompt('Danh sách đồ uống là \n 1.cafe\n 2.cam vắt\n 3.nước ép cà rốt\n 4.nước ép cà chua\n 5.nước lọc\n 6.nước dừa\n 7.thoát gọi món');
-        if (order < 7) {
-            alert('Đồ uống có giá ' + (order * 12500));
-            let number = +prompt('Nhập số lượng bạn muốn order');
-            let sum = number * 15000;
-            alert('Số tiền phải thanh toán là ' + sum);
-        } else if (order === 7) {
-            break;
+        switch (order) {
+            case 1:
+                let a = +prompt('Cafe có giá 10 ngàn đồng!\nHãy nhập vào số lượng bạn muốn mua:');
+                alert('Tổng số tiền bạn phải trà là: ' + a * 10 + 'ngàn đồng');
+                break;
+            case 2:
+                let b = +prompt('Cam vắt có giá 15 ngàn đồng!\nHãy nhập vào số lượng bạn muốn mua:');
+                alert('Tổng số tiền bạn phải trà là: ' + b * 15 + 'ngàn đồng');
+                break;
+            case 3:
+                let c = +prompt('Nước ép cà chua có giá 15 ngàn đồng!\nHãy nhập vào số lượng bạn muốn mua:');
+                alert('Tổng số tiền bạn phải trà là: ' + c * 15 + 'ngàn đồng');
+                break;
+            case 4:
+                let d = +prompt('Nước ép cà rốt có giá 15 ngàn đồng!\nHãy nhập vào số lượng bạn muốn mua:');
+                alert('Tổng số tiền bạn phải trà là: ' + d * 15 + 'ngàn đồng');
+                break;
+            case 5:
+                let e = +prompt('Nước suối có giá 5 ngàn đồng!\nHãy nhập vào số lượng bạn muốn mua:');
+                alert('Tổng số tiền bạn phải trà là: ' + e * 5 + 'ngàn đồng');
+                break;
+            case 6:
+                let f = +prompt('Nước dừa có giá 20 ngàn đồng!\nHãy nhập vào số lượng bạn muốn mua:');
+                alert('Tổng số tiền bạn phải trà là: ' + f * 20 + 'ngàn đồng');
+                break;
+            case 7:
+                alert('Cám ơn quý khách!');
+                break;
+            default:
+                alert('không có món này!');
         }
     } while (true);
 
